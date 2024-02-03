@@ -15,12 +15,17 @@ const TabBar = () => {
                 component={DrawNavigation}
                 options={{
                     tabBarActiveTintColor: 'red',
+                    tabBarInactiveTintColor: 'black',
                     title: 'Home', headerShown: false,
-                    tabBarLabelStyle: { fontSize: 12, fontWeight: 'bold', padding: 5 }
+                    tabBarLabelStyle: { fontSize: 12, fontWeight: 'bold', padding: 5 },
+                    tabBarIcon: ({ focused, color, size }) => (
+                        <Icon name='home' color={color} size={25} />
+                    )
                 }} />
             <tab.Screen name='Favorise' component={Favorise}
                 options={{
                     tabBarActiveTintColor: 'red',
+                    tabBarInactiveTintColor: 'black',
                     tabBarLabelStyle: { fontSize: 12, fontWeight: 'bold', padding: 5 },
                     tabBarIcon: ({ focused, color, size }) => (
                         <Icon name='heart' color={color} size={25} />

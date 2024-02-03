@@ -9,7 +9,7 @@ const Drawer = createDrawerNavigator()
 
 const DrawNavigation = () => {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator screenOptions={{ headerStyle: { backgroundColor: 'orange' } }}>
       <Drawer.Screen name='Accueil' component={Home} />
       <Drawer.Screen name='Faq' component={Faq} />
     </Drawer.Navigator>
